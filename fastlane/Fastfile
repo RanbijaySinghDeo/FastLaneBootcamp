@@ -38,7 +38,8 @@ platform :ios do
         build
         pilot(
             api_key: api_key,
-            groups: ["Development"]
+  	    distribute_external: false,
+  	    submit_beta_review: false
             )
     end
 
