@@ -23,5 +23,5 @@ jobs:
           ruby-version: '4.0'
           bundler-cache: true
 
-      - name: Run unit tests
-        run: bundle exec fastlane unit_tests
+      - name: Run CI
+        run: bundle exec fastlane ci
