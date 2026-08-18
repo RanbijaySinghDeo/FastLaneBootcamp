@@ -36,6 +36,10 @@ platform :ios do
         match(type: "appstore", readonly: true)
         unit_tests
         build
+        pilot(
+            api_key: api_key,
+            skip_waiting_for_build_processing: true
+            )
     end
 
 end
