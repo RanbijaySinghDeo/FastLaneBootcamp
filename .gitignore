@@ -1,0 +1,97 @@
+# ==========================================
+# Xcode
+# ==========================================
+
+# User-specific Xcode settings
+xcuserdata/
+*.xcuserstate
+
+# Xcode project user data
+*.xcworkspace/xcuserdata/
+
+# Derived data
+DerivedData/
+
+# Build products
+build/
+Build/
+
+# Archives
+*.xcarchive
+
+# ==========================================
+# Swift Package Manager
+# ==========================================
+
+.build/
+
+# ==========================================
+# CocoaPods
+# ==========================================
+
+Pods/
+
+# ==========================================
+# Carthage
+# ==========================================
+
+Carthage/Build/
+
+# ==========================================
+# Fastlane
+# ==========================================
+
+# Fastlane reports / test output
+fastlane/test_output/
+fastlane/report.xml
+
+# Fastlane logs
+fastlane/*.log
+
+# ==========================================
+# Build artifacts
+# ==========================================
+
+*.ipa
+*.app
+*.dSYM
+*.dSYM.zip
+*.xcresult
+
+# ==========================================
+# macOS
+# ==========================================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ==========================================
+# Temporary files
+# ==========================================
+
+*.swp
+*.swo
+*.tmp
+*.temp
+
+# ==========================================
+# Environment / Secrets
+# ==========================================
+
+.env
+.env.*
+
+# Don't commit local secret files
+*.p12
+*.mobileprovision
+*.cer
+*.key
+
+# ==========================================
+# Ruby / Bundler
+# ==========================================
+
+.bundle/
+
+vendor/bundle/

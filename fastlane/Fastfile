@@ -1,0 +1,32 @@
+default_platform(:ios)
+
+platform :ios do
+	
+	desc "Run all unit tests"
+
+	lane :unit_tests do
+	  scan(
+	      project: "FastLaneBootcamp.xcodeproj",
+	      scheme: "FastLaneBootcamp",
+	      only_testing: [
+			     "FastLaneBootcampTests"
+			    ]
+	     )
+	end
+
+	desc "Create an archive and export"
+	lane :build do
+	  gym(
+	      project: "FastLaneBootcamp.xcodeproj",
+	      scheme: "FastLaneBootcamp"
+	      )
+	end
+ 
+   desc "Run tests and build the application"
+   lane :ci do
+        match(type: "appstore", readonly: true)
+        unit_tests
+        build
+    end
+
+end
